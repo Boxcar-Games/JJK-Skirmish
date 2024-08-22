@@ -3,37 +3,128 @@ import random
 
 print("Welcome to JJK Skirmish")
 print("Currently in beta build V0.1")
-print("NEW CHARACTERS: Yuji Itadori, Panda, Mai Zen'in")
+print("NEW CHARACTERS: Yuji Itadori, Panda, Mai Zen'in, Nanami")
 print("Produced by AUG__DOG")
 print("Collaborators; Inifitygames, ZigZagFabricGuy")
 
 print("Disclaimer: I do not own any of the rights to this content, this is a fan made game, made without the consent of the creator")
 
-class characters():
-  class JujustsuHigh():
-    class ItadoriYuji():
-      health=200
-      attack=35
-      defense=15
-      cursedEnergy=1350
-      ability1=cursedControl.divergentFist
-      ability2=cursedTechnique.dismantle
-      ability3="cursedControl.blackFlash"
-      ability4="domainExpansion.malevolantYapping"
-      
-      
 class abilities():
   class cursedControl():
     class divergentFist():
       damage=40
       stunBuild=40
       cursedConsumption=50
-      critChance=".13"
+      critChance="13"
       abilityID="Divergent Fist"
+    class blackFlash():
+      damage=100
+      stunBuild=60
+      cursedConsumption=250
+      critChance="40"
+      abilityID="Black Flash"
+    class coreBlast():
+      damage=100
+      stunBuild=20
+      cursedConsumption=200
   class cursedTechnique():
     class dismantle():
       damage=80
       stunBuild=5
       cursedConsumption=150
-      critChance=".25"
+      critChance="25"
       abilityID="Dismantle"
+    class coreShiftSister():
+      damage=35
+      stunBuild=20
+      cursedConsumption=100
+      critChance="40"
+      abilityID="3rd Core"
+    class coreShiftPanda():
+      damage=50
+      stunBuild=40
+      cursedConsumption=50
+      critChance="20"
+      abilityID="First Core"
+    class coreShiftGorilla():
+      damage=80
+      stunBuild=90
+      cursedConsumption=250
+      critChance="35"
+      abilityid="Second Core"
+  class domainExpansion():
+    class malevolentYapping():
+      damage=45
+      stunBuild=100
+      cursedConsumption=450
+      critChance="10"
+      abilityID="Benevolent Shrine"
+      abilityVL="I am you"
+    class malevolentShrine():
+      damage=300
+      stunBuild=20
+      cursedConsumption=800
+      critChance="50"
+      abilityID="Malevolent Shrine"
+      abilityVL="Domain Expansion: Malevolent Shrine"
+  class passive():
+    class SukunasVessel():
+      #playerAttack=playerAttack+25
+      #playerAbility5=abilities.domainExpansion.malevolentShrine
+      #playerCE=playerCE+1000
+      #playerLives=2
+      abilityID="Sukunas Vessel"
+    class cursedCorpse():
+      #playerLives=3
+      #playerCE=playerCE+500
+      abilityID="Cursed Corpse"
+    class overtime():
+      #playerCE=900
+      def overtimeActivate():
+        if playerHealth<=40:
+          #playerCE=1300
+          #playerHealth=playerHealth+40
+          #playerAttack=65
+          while playerHealth<250:
+            overtimeTurn=1
+            if playerTurn=="True":
+              overtimeTurn=overtimeTurn+1
+          if overtimeTurn==5:
+            #playerCE=200
+            #playerHealth=150
+            #playerAttack=45
+            john=3
+      abilityID="Overtime"      
+      
+class characters():
+  class JujustsuHigh():
+    class ItadoriYuji():
+      health=200
+      attack=35
+      defense=15
+      speed=50
+      cursedEnergy=1350
+      lives=1
+      passive=abilities.passive.SukunasVessel
+      ability1=abilities.cursedControl.divergentFist
+      ability2=abilities.cursedTechnique.dismantle
+      ability3=abilities.cursedControl.blackFlash
+      ability4=abilities.domainExpansion.malevolentYapping
+    class Panda():
+      health=350
+      attack=40
+      defense=40
+      speed=35
+      cursedEnergy=800
+      passive=abilities.passive.cursedCorpse
+      ability1=abilities.cursedTechnique.coreShiftPanda
+      ability2=abilities.cursedTechnique.coreShiftSister
+      ability3=abilities.cursedTechnique.coreShiftGorilla
+      ability4=abilities.cursedControl.coreBlast
+    class Nanami():
+      health=250
+      attack=45
+      defense=10
+      speed=45
+      cursedEnergy=1000
+      passive=abilities.passive.overtime
