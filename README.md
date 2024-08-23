@@ -9,12 +9,14 @@ V0.1-Sept 5th:
 
 
   Features:
+
     Prototype combat system
     working abilities
     singleplayer vs computer
 
     
   characters:
+
     Yuji Itadori - Tokyo Jujutsu High School
     Panda - Kyoto Jujustu High School
     Mai Zen'in - Kyoto Jujustu High School
@@ -25,12 +27,14 @@ V0.2-Sept 28th "Allies and Curses":
 
 
   features:
+
     gamemode selections
     multiplayer capabiity
     combat optimization
 
     
   characters:
+
     Kugisaki Nobara - Tokyo Jujustu High School
     Megumi Fushiguro - Tokyo Jujutsu High School
     Jogo - Cursed Spirit
@@ -39,11 +43,13 @@ V0.3-Oct 15th "The Strongest":
 
 
   features:
+
     ability optimization
     2v2
 
     
   characters:
+
     Gojo Satoru - Jujutsu High School
     Ryomen Sukuna - Cursed Spirit
     
@@ -52,12 +58,14 @@ V0.4-Nov 1st "Kyoto School Expansion":
 
 
   Features:
+
     More voice line
     overall immersion improvement
     possible website?
 
     
   characters:
+
     Mechamaru - Kyoto Jujutsu High School
     Miwa - Kyoto Jujustu High School
     Momo Nishimiya - Kyoto Jujutsu High School
@@ -70,10 +78,12 @@ V0.5-TBA "Cursed Omens":
 
 
   Features:
+
     TBA
 
     
   Characters:
+
     Choso - Cursed Spirit
     Hanami - Cursed Spirit
     Geto - Tokyo Jujutsu High School
