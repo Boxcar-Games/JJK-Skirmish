@@ -42,6 +42,12 @@ class abilities():
       cursedConsumption=100
       critChance="35"
       abilityID="Wrapped Fist"
+    class cursedBullet():
+      damage=30
+      stunBuild=15
+      cursedConsumption=10
+      critChance="55"
+      abilityID="Cursed Bullet"
   class cursedTechnique():
     class dismantle():
       damage=80
@@ -79,6 +85,49 @@ class abilities():
       cursedConsumption=120
       critChance="80"
       abilityID="Collapse"
+    class creation():
+      damage=200
+      stunBuild=200
+      cursedConsumption=400
+      critChance="100"
+      abilityID="Creation"
+    class TSFrogs():
+      damage=10
+      stunBuild=150
+      cursedConsumption=25
+      critChance="35"
+      abilityID="Ten Shadows: Frogs"
+    class TSDogs():
+      damage=60
+      stunBuild=50
+      cursedConsumption=60
+      critChance="45"
+      abilityID="Ten Shadows: Demon Dogs"
+    class TSNue():
+      damage=80
+      stunBuild=100
+      cursedConsumption=100
+      critChance="75"
+      abilityID="Ten Shadows: Nue"
+    class TSElephant():
+      damage=120
+      stunBuild=125
+      cursedConsumtption=200
+      critChace="25"
+      abiltyID="Ten Shadows: Elephant, Maximum Form"
+  class cursedWeapons():
+    class rubberBullet():
+      damage=5
+      stunBuild=45
+      cursedConsumption=0
+      critChance="70"
+      abilityID="Rubber Bullets"
+    class rapidFire():
+      damage=45
+      stunBuild=25
+      cursedConsumption=0
+      critChance="80"
+      abilityiD="Rapid Fire"
   class domainExpansion():
     class malevolentYapping():
       damage=45
@@ -121,7 +170,12 @@ class abilities():
             #playerHealth=150
             #playerAttack=45
             john=3
-      abilityID="Overtime"      
+      abilityID="Overtime" 
+    class zenin():
+      #playerHealth=playerHealth+50
+      #playerAttack=playerAttack+15
+      #playerSpeed=playerSpeed+20
+      abilityID="Zen'in Heritage"
       
 class characters():
   class JujustsuHigh():
@@ -130,7 +184,7 @@ class characters():
       difficulty="Easy"
       description="Yuji is able to do mass amounts of damage quickly while also building stun, his divergent fist and black flash ensure a quick end to any encounters, while being sukunas vessel allows him to access domain expansions, capable of taking down even the strongest cursed spirits"
       health=200
-      attack=35
+      attack=340
       defense=15
       speed=50
       cursedEnergy=1350
@@ -145,7 +199,7 @@ class characters():
       difficulty="Medium"
       description="With 3 lives, Panda is a tank on the battle field, swapping between cores will allow you to deal massive damage and build tons of stun on your opponent"
       health=350
-      attack=40
+      attack=45
       defense=40
       speed=35
       cursedEnergy=800
@@ -159,7 +213,7 @@ class characters():
       difficulty="Medium"
       description="Nanami is a grade 1 sorcerer, his 7:3 ratio make him deadly to most targets, that combined with his passive 'Overtime', make for a deadly combo on the field"
       health=250
-      attack=45
+      attack=50
       defense=10
       speed=45
       cursedEnergy=1000
@@ -177,3 +231,20 @@ class characters():
       speed=40
       cursedEnergy=500
       passiveAbility=abilities.passive.zenin
+      ability1=abilities.cursedControl.cursedBullet
+      ability2=abilities.cursedWeapons.rubberBullet
+      ability3=abilities.cursedWeapons.rapidFire
+      ability4=abilities.cursedTechnique.creation
+    class megumiFushiguro():
+      rank="2"
+      difficulty="Easy"
+      Health=150
+      attack=35
+      defense=15
+      speed=40
+      cursedEnergy=750
+      passiveAbility=abilities.passive.zenin
+      ability1=abilities.cursedTechnique.TSFrogs
+      ability2=abilities.cursedTechnique.TSDogs
+      ability3=abilities.cursedTechnique.TSNue
+      ability4=abilities.cursedTechnique.TSElephant
