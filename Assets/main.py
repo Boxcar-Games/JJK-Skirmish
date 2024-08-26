@@ -248,3 +248,6 @@ class characters():
       ability2=abilities.cursedTechnique.TSDogs
       ability3=abilities.cursedTechnique.TSNue
       ability4=abilities.cursedTechnique.TSElephant
+
+def playerSelect():
+  
