@@ -6,7 +6,7 @@ print("Currently in beta build V0.1")
 print("NEW CHARACTERS: Yuji Itadori, Panda, Mai Zen'in, Nanami")
 print("")
 print("Produced by AUG__DOG")
-print("Collaborators; Inifitygames, ZigZagFabricGuy")
+print("Collaborators; InfinityLoop1, ZigZagFabricGuy")
 print("")
 
 print("Disclaimer: I do not own any of the rights to this content, this is a fan made game, made without the consent of the creator")
