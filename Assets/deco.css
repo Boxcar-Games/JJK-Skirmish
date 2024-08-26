@@ -1,0 +1,11 @@
+h1 {
+  color: red;
+  font-size: 3em;
+}
+h2 {
+  font-size: 1.8em;
+}
+h3 {
+  font-size: 1.3em;
+  text-decoration: underline;
+}
