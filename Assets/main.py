@@ -1,16 +1,6 @@
 import math
 import random
 
-print("Welcome to JJK Skirmish")
-print("Currently in beta build V0.1")
-print("NEW CHARACTERS: Yuji Itadori, Panda, Mai Zen'in, Nanami")
-print("")
-print("Produced by AUG__DOG")
-print("Collaborators; InfinityLoop1, ZigZagFabricGuy")
-print("")
-
-print("Disclaimer: I do not own any of the rights to this content, this is a fan made game, made without the consent of the creator")
-
 class abilities():
   class cursedControl():
     class divergentFist():
@@ -143,42 +133,9 @@ class abilities():
       critChance="50"
       abilityID="Malevolent Shrine"
       abilityVL="Domain Expansion: Malevolent Shrine"
-  class passive():
-    class SukunasVessel():
-      #playerAttack=playerAttack+25
-      #playerAbility5=abilities.domainExpansion.malevolentShrine
-      #playerCE=playerCE+1000
-      #playerLives=2
-      abilityID="Sukunas Vessel"
-    class cursedCorpse():
-      #playerLives=3
-      #playerCE=playerCE+500
-      abilityID="Cursed Corpse"
-    class overtime():
-      #playerCE=900
-      def overtimeActivate():
-        if playerHealth<=40:
-          #playerCE=1300
-          #playerHealth=playerHealth+40
-          #playerAttack=65
-          while playerHealth<250:
-            overtimeTurn=1
-            if playerTurn=="True":
-              overtimeTurn=overtimeTurn+1
-          if overtimeTurn==5:
-            #playerCE=200
-            #playerHealth=150
-            #playerAttack=45
-            john=3
-      abilityID="Overtime" 
-    class zenin():
-      #playerHealth=playerHealth+50
-      #playerAttack=playerAttack+15
-      #playerSpeed=playerSpeed+20
-      abilityID="Zen'in Heritage"
       
 class characters():
-  class JujustsuHigh():
+  class JujutsuHigh():
     class ItadoriYuji():
       rank="Special Grade"
       difficulty="Easy"
@@ -189,11 +146,11 @@ class characters():
       speed=50
       cursedEnergy=1350
       lives=1
-      passive=abilities.passive.SukunasVessel
       ability1=abilities.cursedControl.divergentFist
       ability2=abilities.cursedTechnique.dismantle
       ability3=abilities.cursedControl.blackFlash
       ability4=abilities.domainExpansion.malevolentYapping
+      ability5=abilities.domainExpansion.malevolentYapping
     class Panda():
       rank="2"
       difficulty="Medium"
@@ -203,7 +160,7 @@ class characters():
       defense=40
       speed=35
       cursedEnergy=800
-      passive=abilities.passive.cursedCorpse
+      lives=3
       ability1=abilities.cursedTechnique.coreShiftPanda
       ability2=abilities.cursedTechnique.coreShiftSister
       ability3=abilities.cursedTechnique.coreShiftGorilla
@@ -217,7 +174,7 @@ class characters():
       defense=10
       speed=45
       cursedEnergy=1000
-      passive=abilities.passive.overtime
+      lives=1
       ability1=abilities.cursedControl.spottedDullBlade
       ability2=abilities.cursedControl.wrappedFist
       ability3=abilities.cursedTechnique.collapse
@@ -230,7 +187,7 @@ class characters():
       defense=25
       speed=40
       cursedEnergy=500
-      passiveAbility=abilities.passive.zenin
+      lives=1
       ability1=abilities.cursedControl.cursedBullet
       ability2=abilities.cursedWeapons.rubberBullet
       ability3=abilities.cursedWeapons.rapidFire
@@ -243,11 +200,130 @@ class characters():
       defense=15
       speed=40
       cursedEnergy=750
-      passiveAbility=abilities.passive.zenin
+      lives=1
       ability1=abilities.cursedTechnique.TSFrogs
       ability2=abilities.cursedTechnique.TSDogs
       ability3=abilities.cursedTechnique.TSNue
       ability4=abilities.cursedTechnique.TSElephant
 
-def playerSelect():
+def playerSelectYuji():
+  playerCharacter="Yuji Itadori"
+  playerHealth=characters.JujutsuHigh.ItadoriYuji.health
+  playerAttack=characters.JujutsuHigh.ItadoriYuji.attack
+  playerDefense=characters.JujutsuHigh.ItadoriYuji.defense
+  playerSpeed=characters.JujutsuHigh.ItadoriYuji.speed
+  playerCE=characters.JujutsuHigh.ItadoriYuji.cursedEnergy
+  playerLives=characters.JujutsuHigh.ItadoriYuji.lives
+  playerA1=characters.JujutsuHigh.ItadoriYuji.ability1
+  playerA2=characters.JujutsuHigh.ItadoriYuji.ability2
+  playerA3=characters.JujutsuHigh.ItadoriYuji.ability3
+  playerA4=characters.JujutsuHigh.ItadoriYuji.ability4
+  playerA5=characters.JujutsuHigh.ItadoriYuji.ability5
+  return
+def playerSelectPanda():
+  playerCharacter="Panda"
+  playerHealth=characters.JujutsuHigh.Panda.health
+  playerAttack=characters.JujutsuHigh.Panda.attack
+  playerDefense=characters.JujutsuHigh.Panda.defense
+  playerSpeed=characters.JujutsuHigh.Panda.speed
+  playerCE=characters.JujutsuHigh.Panda.cursedEnergy
+  playerLives=characters.JujutsuHigh.Panda.lives
+  playerA1=characters.JujutsuHigh.Panda.ability1
+  playerA2=characters.JujutsuHigh.Panda.ability2
+  playerA3=characters.JujutsuHigh.Panda.ability3
+  playerA4=characters.JujutsuHigh.Panda.ability4
+  return
+def playerSelectNanami():
+  playerCharacter="Nanami"
+  playerHealth=characters.JujutsuHigh.Nanami.health
+  playerAttack=characters.JujutsuHigh.Nanami.attack
+  playerDefense=characters.JujutsuHigh.Nanami.defense
+  playerSpeed=characters.JujutsuHigh.Nanami.speed
+  playerCE=characters.JujutsuHigh.Nanami.cursedEnergy
+  playerLives=characters.JujutsuHigh.Nanami.lives
+  playerA1=characters.JujutsuHigh.Nanami.ability1
+  playerA2=characters.JujutsuHigh.Nanami.ability2
+  playerA3=characters.JujutsuHigh.Nanami.ability3
+  playerA4=characters.JujutsuHigh.Nanami.ability4
+  return
+def playerSelectMai():
+  playerCharacter="Mai Zen'in"
+  playerHealth=characters.JujutsuHigh.MaiZenin.health
+  playerAttack=characters.JujutsuHigh.MaiZenin.attack
+  playerDefense=characters.JujutsuHigh.MaiZenin.defense
+  playerSpeed=characters.JujutsuHigh.MaiZenin.speed
+  playerCE=characters.JujutsuHigh.MaiZenin.cursedEnergy
+  playerLives=characters.JujutsuHigh.MaiZenin.lives
+  playerA1=characters.JujutsuHigh.MaiZenin.ability1
+  playerA2=characters.JujutsuHigh.MaiZenin.ability2
+  playerA3=characters.JujutsuHigh.MaiZenin.ability3
+  playerA4=characters.JujutsuHigh.MaiZenin.ability4
+  return
+
+def compSelectYuji():
+  compCharacter="Yuji Itadori"
+  compHealth=characters.JujutsuHigh.ItadoriYuji.health
+  compAttack=characters.JujutsuHigh.ItadoriYuji.attack
+  compDefense=characters.JujutsuHigh.ItadoriYuji.defense
+  compSpeed=characters.JujutsuHigh.ItadoriYuji.speed
+  compCE=characters.JujutsuHigh.ItadoriYuji.cursedEnergy
+  compLives=characters.JujutsuHigh.ItadoriYuji.lives
+  compA1=characters.JujutsuHigh.ItadoriYuji.ability1
+  compA2=characters.JujutsuHigh.ItadoriYuji.ability2
+  compA3=characters.JujutsuHigh.ItadoriYuji.ability3
+  compA4=characters.JujutsuHigh.ItadoriYuji.ability4
+  compA5=characters.JujutsuHigh.ItadoriYuji.ability5
+  print("Yuji Itadori")
+  return
+def compSelectPanda():
+  compCharacter="Panda"
+  compHealth=characters.JujutsuHigh.Panda.health
+  compAttack=characters.JujutsuHigh.Panda.attack
+  compDefense=characters.JujutsuHigh.Panda.defense
+  compSpeed=characters.JujutsuHigh.Panda.speed
+  compCE=characters.JujutsuHigh.Panda.cursedEnergy
+  compLives=characters.JujutsuHigh.Panda.lives
+  compA1=characters.JujutsuHigh.Panda.ability1
+  compA2=characters.JujutsuHigh.Panda.ability2
+  compA3=characters.JujutsuHigh.Panda.ability3
+  compA4=characters.JujutsuHigh.Panda.ability4
+  print("Panda")
+  return
+def compSelectNanami():
+  compCharacter="Nanami"
+  compHealth=characters.JujutsuHigh.Nanami.health
+  compAttack=characters.JujutsuHigh.Nanami.attack
+  compDefense=characters.JujutsuHigh.Nanami.defense
+  compSpeed=characters.JujutsuHigh.Nanami.speed
+  compCE=characters.JujutsuHigh.Nanami.cursedEnergy
+  compLives=characters.JujutsuHigh.Nanami.lives
+  compA1=characters.JujutsuHigh.Nanami.ability1
+  compA2=characters.JujutsuHigh.Nanami.ability2
+  compA3=characters.JujutsuHigh.Nanami.ability3
+  compA4=characters.JujutsuHigh.Nanami.ability4
+  print("Nanami")
+  return
+def compSelectMai():
+  compCharacter="Mai Zen'in"
+  print("Mai Zen'in")
+  return
+
+#compCharacters=[compSelectYuji(),compSelectNanami(),compSelectPanda(),compSelectMai()]
+
+def overTimeExec():
+  playerCE=1400
+  playerHealth=playerHealth+40
+  playerAttack=65
+  
+def combatLoopYuji():
+  return
+def combatLoopPanda():
+  return
+def combatLoopNanami():
+  return
+def combatLoopMai():
+  return
+  
+def compPlayerR():
+  return
   
