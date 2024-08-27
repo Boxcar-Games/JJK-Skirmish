@@ -121,7 +121,7 @@ class abilities():
   class domainExpansion():
     class malevolentYapping():
       damage=45
-      stunBuild=100
+      stunBuild=200
       cursedConsumption=450
       critChance="10"
       abilityID="Benevolent Shrine"
@@ -133,6 +133,10 @@ class abilities():
       critChance="50"
       abilityID="Malevolent Shrine"
       abilityVL="Domain Expansion: Malevolent Shrine"
+    class mountainOfIron():
+      damage=80
+      stunBuild=40
+      cursedConsumption=
       
 class characters():
   class JujutsuHigh():
@@ -171,7 +175,7 @@ class characters():
       description="Nanami is a grade 1 sorcerer, his 7:3 ratio make him deadly to most targets, that combined with his passive 'Overtime', make for a deadly combo on the field"
       health=250
       attack=50
-      defense=10
+      defense=25
       speed=45
       cursedEnergy=1000
       lives=1
@@ -205,6 +209,20 @@ class characters():
       ability2=abilities.cursedTechnique.TSDogs
       ability3=abilities.cursedTechnique.TSNue
       ability4=abilities.cursedTechnique.TSElephant
+  class CursedSpirits():
+    class Jogo():
+      rank="Special Grade"
+      difficulty="Medium"
+      health=175
+      attack=20
+      defense=35
+      speed=45
+      cursedEnergy=1150
+      lives=1
+      #ability1
+      #ability2
+      #ability3
+      
 
 def playerSelectYuji():
   playerCharacter="Yuji Itadori"
@@ -305,6 +323,16 @@ def compSelectNanami():
   return
 def compSelectMai():
   compCharacter="Mai Zen'in"
+  compHealth=characters.JujutsuHigh.MaiZenin.health
+  compAttack=characters.JujutsuHigh.MaiZenin.attack
+  compDefense=characters.JujutsuHigh.MaiZenin.defense
+  compSpeed=characters.JujutsuHigh.MaiZenin.speed
+  compCE=characters.JujutsuHigh.MaiZenin.cursedEnergy
+  compLives=characters.JujutsuHigh.MaiZenin.lives
+  compA1=characters.JujutsuHigh.MaiZenin.ability1
+  compA2=characters.JujutsuHigh.MaiZenin.ability2
+  compA3=characters.JujutsuHigh.MaiZenin.ability3
+  compA4=characters.JujutsuHigh.MaiZenin.ability4
   print("Mai Zen'in")
   return
 
@@ -326,4 +354,8 @@ def combatLoopMai():
   
 def compPlayerR():
   return
+  
+  
+  
+  
   
