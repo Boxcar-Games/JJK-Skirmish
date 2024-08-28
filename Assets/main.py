@@ -136,7 +136,8 @@ class abilities():
     class mountainOfIron():
       damage=80
       stunBuild=40
-      cursedConsumption=
+      cursedConsumption=400
+      
       
 class characters():
   class JujutsuHigh():
@@ -336,8 +337,6 @@ def compSelectMai():
   print("Mai Zen'in")
   return
 
-#compCharacters=[compSelectYuji(),compSelectNanami(),compSelectPanda(),compSelectMai()]
-
 def overTimeExec():
   playerCE=1400
   playerHealth=playerHealth+40
@@ -352,8 +351,7 @@ def combatLoopNanami():
 def combatLoopMai():
   return
   
-def compPlayerR():
-  return
+
   
   
   
