@@ -5,7 +5,7 @@ This will hopefull feauture everyone in the anime up to season 2 by the time i r
 Here is my Roadmap for the next few version
 
 
-V0.1-Sept 5th:
+V0.1-Sept 20th:
 
 
   Features:
@@ -23,7 +23,7 @@ V0.1-Sept 5th:
     Nanami - Tokyo Jujutsu High School
     
     
-V0.2-Sept 28th "Allies and Curses":
+V0.2-Oct 13th "Allies and Curses":
 
 
   features:
@@ -39,7 +39,7 @@ V0.2-Sept 28th "Allies and Curses":
     Megumi Fushiguro - Tokyo Jujutsu High School
     Jogo - Cursed Spirit
 
-V0.3-Oct 15th "The Strongest":
+V0.3-Oct 30th "The Strongest":
 
 
   features:
@@ -54,7 +54,7 @@ V0.3-Oct 15th "The Strongest":
     Ryomen Sukuna - Cursed Spirit
     
 
-V0.4-Nov 1st "Kyoto School Expansion":
+V0.4-Nov 14th "Kyoto School Expansion":
 
 
   Features:
