@@ -1,11 +1,7 @@
-h1 {
-  color: red;
-  font-size: 3em;
-}
-h2 {
-  font-size: 1.8em;
-}
-h3 {
-  font-size: 1.3em;
-  text-decoration: underline;
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+body {
+  font-family: Silkscreen, sans-serif;
+  color: #FFFFFF;
+  background-color: #101010;
 }
