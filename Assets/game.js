@@ -12,3 +12,13 @@ function panda(Health, Attack, Defense, Speed, cursedEnergy) {
   this.Speed = 35;
   this.cursedEnergy = 800;
 }
+function Nanami(Health, Attack, Defense, Speed, cursedEnergy) {
+  this.Health = 250;
+  this.Attack = 50;
+  this.Defense = 25;
+  this.Speed = 45;
+  this.cursedEnergy = 1000;
+}
+var characterSelect = function () {
+  
+}
