@@ -28,3 +28,17 @@ button:hover {
   box-shadow: 0 6px 20px rgba(255, 255, 2556, 0.5);
   background: linear-gradient(35deg, #101010, #303030);
 }
+
+#container, #info {
+  width: 700px;
+  height: 600px;
+  margin: 10px;
+  background-color: blue;
+  border: 10px solid orange;
+  border-radius: 20px;
+  text-align: center;
+}
+
+#info {
+  height: 100px;
+}
