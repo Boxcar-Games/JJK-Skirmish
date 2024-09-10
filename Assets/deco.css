@@ -42,3 +42,21 @@ button:hover {
 #info {
   height: 100px;
 }
+      
+#image {
+  height: 88%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+img {
+  margin-top: 10px;
+  height: auto;
+  max-width: 650px;
+  animation: gloweffect 2s infinite;
+}
+@keyframes gloweffect {
+  0%, 100% {filter: drop-shadow(0 0 0.35rem rgb(0 174 255));}
+  25% {filter: drop-shadow(());}
+  50% {filter: drop-shadow(());}
+}
