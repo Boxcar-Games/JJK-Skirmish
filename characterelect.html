@@ -1,14 +1,44 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>JJK-Skirmish/character-select</title>
-    <link rel="stylesheet" type="text/css" href="assets/deco.css" />
+    <title>JJK-Skirmish/character-select</title>\
+    <link rel="stylesheet" type="text/css" href="deco.css" />
+    <style>
+      #container, #info {
+        width: 700px;
+        height: 600px;
+        margin: 10px;
+        background-color: blue;
+        border: 10px solid orange;
+        border-radius: 20px;
+        text-align: center;
+      }
+      #info {
+        height: 100px;
+      }
+    </style>
   </head>
   <body>
-    <h1>Choose Your Character!</h1>
-    <button>Yuji Itadori</button>
-    <button>Panda</button>
-    <button>Nanami</button>
-    <button>Mai Zen'in</button>
+    <div id="container">
+        <h1>Choose Your Character</h1>
+      <div id="images">
+        <h2 id="name">Yuji Itadori</h2>
+        <img id="img" src="assets/yuji.jpg">
+      </div>
+      <div id="controls">
+        <button id="yuji" onclick="">Yuji Itadori</button>
+        <button id="panda" onclick="">Panda</button>
+        <button id="nanami" onclick="">Nanami</button>
+        <button id="mai" onclick="">Mai Zen'in</button>
+        <button>Coming Soon</button>
+      </div>
+      
+      <div id="info">
+        
+      </div>
+        
+    </div>
+    
+    
   </body>
 </html>
