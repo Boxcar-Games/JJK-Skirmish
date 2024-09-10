@@ -1,7 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
 
 body {
+  background: linear-gradient(135deg, #101010, #303030);
+  color: #fdfdfd;
   font-family: Silkscreen, sans-serif;
-  color: #FFFFFF;
-  background-color: #101010;
+  overflow: hidden;
+  height: 100vh;
+  font-size: 125%;
+}
+
+button {
+  font-family: Silkscreen, sans-serif;
+  background: linear-gradient(135deg, #101010, #303030);
+  color: #fdfdfd;
+  font-family: sans-serif;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px outset #fdfdfd;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s, background 0.5s;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
+  font-size: 100%;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(255, 255, 2556, 0.5);
+  background: linear-gradient(35deg, #101010, #303030);
 }
