@@ -22,3 +22,30 @@ function Nanami(Health, Attack, Defense, Speed, cursedEnergy) {
 var characterSelect = function () {
   
 }
+
+function changeCharacter(character) {
+  
+  switch(character)
+  {
+      case "Mai":
+        document.GetElementById("img").src = "assets/placeholdermai.png";
+        document.GetElementById("name").innerHTML = "Mai Zen'in";
+        break;
+        
+      case "Yuji":
+        document.GetElementById("img").src = "assets/yuji.jpg";
+        document.GetElementById("name").innerHTML = "Yuji Itadori";
+        break;
+      
+      case "Panda":
+        document.GetElementById("img").src = "assets/placeholderpanda.png";
+        document.GetElementById("name").innerHTML = "Panda"
+        break;
+      
+      case "Nanami":
+        document.GetElementById("img").src = "assets/placeholdernanami.png";
+        document.GetElementById("name").innerHTML = "Nanami"
+        break;
+  }  
+  
+}
