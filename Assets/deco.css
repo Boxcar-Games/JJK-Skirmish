@@ -13,7 +13,6 @@ button {
   font-family: Silkscreen, sans-serif;
   background: linear-gradient(135deg, #101010, #303030);
   color: #fdfdfd;
-  font-family: sans-serif;
   padding: 10px;
   border-radius: 10px;
   border: 1px outset #fdfdfd;
@@ -21,12 +20,15 @@ button {
   transition: transform 0.3s, box-shadow 0.3s, background 0.5s;
   box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
   font-size: 100%;
+  position: relative;
+  text-shadow: 0-1px #333;
 }
 
 button:hover {
   transform: scale(1.05);
   box-shadow: 0 6px 20px rgba(255, 255, 2556, 0.5);
   background: linear-gradient(35deg, #101010, #303030);
+  animation: gloweffect 5s infinite;
 }
 
 #container, #info {
@@ -54,6 +56,29 @@ img {
   height: auto;
   max-width: 650px;
   animation: gloweffect 2s infinite;
+}
+@keyframes gloweffect {
+  0%, 100% {filter: drop-shadow(0 0 0.35rem rgb(0 174 255));}
+  25% {filter: drop-shadow(0 0 0.65rem rgb(0 255 4));}
+  50% {filter: drop-shadow(0 0 0.85rem rgb(255 0 0));}
+}
+#name {
+  position: absolute;
+  z-index: 99999;
+  font-size: 60pt;
+  filter: drop-shadow(0 0 0.90rem rgb(0 0 0));
+  left: 25%;
+  bottom: 10%;
+  color: white;
+  font-weight: bold;
+  -webkit-text-stroke: 3px black;
+}
+
+#yuji, #panda, #nanami, #mai, #megumi, #kugisaki {
+  background-image: linear-gradient(blue white);
+}
+#jogo {
+  background-image: linear-gradient(red white);
 }
 @keyframes gloweffect {
   0%, 100% {filter: drop-shadow(0 0 0.35rem rgb(0 174 255));}
