@@ -3,23 +3,27 @@
   <head>
     <title>Character Select</title>
     <link rel="stylesheet" type="text/css" href="assets/deco.css" />
+    <script src="assets/game.js"></script>
   </head>
   <body>
     <div id="container">
         <h1>Choose Your Character</h1>
       <div id="images">
         <h2 id="name">Yuji Itadori</h2>
-        <img id="img" src="assets/yuji.jpg">
+        <img id="img" src="assets/images/yuji.png">
       </div>
       <div id="controls">
-        <button id="yuji" onclick="">Yuji Itadori</button>
-        <button id="panda" onclick="">Panda</button>
-        <button id="nanami" onclick="">Nanami</button>
-        <button id="mai" onclick="">Mai Zen'in</button>
-        <button>Coming Soon</button>
+        <button id="yuji" onclick="changeCharacter('yuji')">Yuji Itadori</button>
+        <button id="panda" onclick="changeCharacter('panda')">Panda</button>
+        <button id="nanami" onclick="changeCharacter('nanami')">Nanami</button>
+        <button id="mai" onclick="changeCharacter('mai')">Mai Zen'in</button>
+        <button id=megumi>Coming Soon</button>
+        <button id=kagisaki>Coming soon</button>
+        <button id=jogo>Coming soon</button>
       </div>
       
       <div id="info">
+        <h3>Select your character above!</h3>
         
       </div>
         
