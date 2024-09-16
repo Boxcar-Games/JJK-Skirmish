@@ -19,9 +19,6 @@ function Nanami(Health, Attack, Defense, Speed, cursedEnergy) {
   this.Speed = 45;
   this.cursedEnergy = 1000;
 }
-var characterSelect = function () {
-  
-}
 
 function changeCharacter(character) {
   
@@ -39,12 +36,12 @@ function changeCharacter(character) {
       
       case "Panda":
         document.GetElementById("img").src = "assets/placeholderpanda.png";
-        document.GetElementById("name").innerHTML = "Panda"
+        document.GetElementById("name").innerHTML = "Panda";
         break;
       
       case "Nanami":
         document.GetElementById("img").src = "assets/placeholdernanami.png";
-        document.GetElementById("name").innerHTML = "Nanami"
+        document.GetElementById("name").innerHTML = "Nanami";
         break;
   }  
   
