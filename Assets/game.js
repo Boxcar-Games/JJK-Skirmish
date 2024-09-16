@@ -25,22 +25,22 @@ function changeCharacter(character) {
   switch(character)
   {
       case "Mai":
-        document.GetElementById("img").src = "assets/placeholdermai.png";
+        document.GetElementById("img").src = "assets/images/placeholdermai.png";
         document.GetElementById("name").innerHTML = "Mai Zen'in";
         break;
         
       case "Yuji":
-        document.GetElementById("img").src = "assets/yuji.jpg";
+        document.GetElementById("img").src = "assets/images/yuji.png";
         document.GetElementById("name").innerHTML = "Yuji Itadori";
         break;
       
       case "Panda":
-        document.GetElementById("img").src = "assets/placeholderpanda.png";
+        document.GetElementById("img").src = "assets/images/placeholderpanda.png";
         document.GetElementById("name").innerHTML = "Panda";
         break;
       
       case "Nanami":
-        document.GetElementById("img").src = "assets/placeholdernanami.png";
+        document.GetElementById("img").src = "assets/images/placeholdernanami.png";
         document.GetElementById("name").innerHTML = "Nanami";
         break;
   }  
