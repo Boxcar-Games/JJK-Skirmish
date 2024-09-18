@@ -1,6 +1,40 @@
 import math
 import random
 
+#These are some global variables that I needed while coding Kugisaki, feel free to remove them if needed - Night#
+#player globals#
+global playerHealth
+global playerMaxHealth
+global playerAttack
+global playerDefense
+global playerSpeed
+global playerCE
+global playerLives
+global playerA1
+global playerA2
+global playerA3
+global playerA4
+global playerA5
+global playerEnemyNails
+#computer globals#
+global compHealth
+global compMaxHealth
+global compAttack
+global compDefense
+global compSpeed
+global compCE
+global compLives
+global compA1
+global compA2
+global compA3
+global compA4
+global compA5
+global compEnemyNails
+
+
+#Kugisaki has two abilities that fall under cursed weapons:Hammer Strike and Ranged Nail - Night#
+#Kugisaki also has two abilities that fall under cursed technique: Hairpin and resonance -Night#
+
 class abilities():
   class cursedControl():
     class divergentFist():
@@ -39,6 +73,38 @@ class abilities():
       critChance="55"
       abilityID="Cursed Bullet"
   class cursedTechnique():
+    class playerSDhairPin():
+      damage=30
+      stunBuild=40
+      cursedConsumption=150
+      critChance="50"
+      abilityID="Strawdoll Technique: Hairpin"
+      def playerFinalDamage():      
+        playerFinalDamage=abilities.cursedTechnique.playerSDhairPin.damage+((playerSelectNobara.playerEnemyNails)*30)
+    class playerSDresonance():
+      damage=30
+      stunBuild=75
+      cursedConsumption=300
+      critChance="100"
+      abilityID="Strawdoll Technique: Resonance"
+      def playerFinalDamage():
+        playerFinalDamage=abilities.cursedTechnique.playerSDresonance.damage+((compMaxHealth-compHealth)*0.20)
+    class compSDhairPin():
+      damage=30
+      stunBuild=40
+      cursedConsumption=150
+      critChance="50"
+      abilityID="Strawdoll Technique: Hairpin"
+      def compFinalDamage():       
+        compFinalDamage=abilities.cursedTechnique.compSDhairPin.damage+((compSelectNobara.compEnemyNails)*30)
+    class compSDresonance():
+      damage=30
+      stunBuild=75
+      cursedConsumption=300
+      critChance="100"
+      abilityID="Strawdoll Technique: Resonance"
+      def compFinalDamage():
+        compFinalDamage=abilities.cursedTechnique.compSDresonance.damage+((playerMaxHealth-playerHealth)*0.20)
     class dismantle():
       damage=80
       stunBuild=5
@@ -106,6 +172,18 @@ class abilities():
       critChace="25"
       abiltyID="Ten Shadows: Elephant, Maximum Form"
   class cursedWeapons():
+    class rangedNail():
+      damage=20
+      stunbuild=15
+      cursedConsumption=40
+      critChance="30"
+      abilityID="Ranged Nail"
+    class hammerStrike():
+      damage=20
+      stunbuild=45
+      cursedConsumption=20
+      critChance="10"
+      abilityID="Hammer Stike"
     class rubberBullet():
       damage=5
       stunBuild=45
@@ -210,6 +288,21 @@ class characters():
       ability2=abilities.cursedTechnique.TSDogs
       ability3=abilities.cursedTechnique.TSNue
       ability4=abilities.cursedTechnique.TSElephant
+    class nobaraKugisaki():
+      rank="3"
+      difficulty="Medium"
+      Health=150
+      attack=20
+      defense=20
+      speed=35
+      lives=1
+      cursedEnergy=700
+      ability1=abilities.cursedWeapons.rangedNail
+      ability2=abilities.cursedWeapons.hammerStrike
+      ability3a=abilities.cursedTechnique.playerSDhairPin
+      ability4a=abilities.cursedTechnique.playerSDresonance
+      ability3b=abilities.cursedTechnique.compSDhairPin
+      ability4b=abilities.cursedTechnique.compSDresonance
   class CursedSpirits():
     class Jogo():
       rank="Special Grade"
@@ -224,7 +317,7 @@ class characters():
       #ability2
       #ability3
       
-
+#I decided to add Nobara to this list, you can remove her if this causes problems - Night#
 def playerSelectYuji():
   playerCharacter="Yuji Itadori"
   playerHealth=characters.JujutsuHigh.ItadoriYuji.health
@@ -336,6 +429,71 @@ def compSelectMai():
   compA4=characters.JujutsuHigh.MaiZenin.ability4
   print("Mai Zen'in")
   return
+def playerSelectNobara():
+  playerCharacter="Nobara Kugisaki"
+  playerHealth=characters.JujutsuHigh.nobaraKugisaki.Health
+  playerMaxHealth=characters.JujutsuHigh.nobaraKugisaki.Health
+  playerAttack=characters.JujutsuHigh.nobaraKugisaki.attack
+  playerDefense=characters.JujutsuHigh.nobaraKugisaki.defense
+  playerSpeed=characters.JujutsuHigh.nobaraKugisaki.speed
+  playerCE=characters.JujutsuHigh.nobaraKugisaki.cursedEnergy
+  playerLives=characters.JujutsuHigh.nobaraKugisaki.lives
+  playerA1=characters.JujutsuHigh.nobaraKugisaki.ability1
+  playerA2=characters.JujutsuHigh.nobaraKugisaki.ability2
+  playerA3=characters.JujutsuHigh.nobaraKugisaki.ability3a
+  playerA4=characters.JujutsuHigh.nobaraKugisaki.ability4a
+  playerStunlevel=0
+  playerEnemyNails=0
+  return
+
+
+#This is just a little thing that I made as a placeholder, you may remove if necessary - Night#
+
+def compCharacterChoice():
+  compCharacterChoice=random.randint(1,5)
+  if compCharacterChoice == 1:
+    print("Enemy is Yuji Itador")
+    compSelectYuji
+  elif compCharacterChoice == 2:
+    print("Enemy is Panda")
+    compSelectPanda
+  elif compCharacterChoice == 3:
+    print("Enemy is Nanami")
+    compSelectNanami
+  elif compCharacterChoice == 4:
+    print("Enemy is Mai Zenin")
+    compSelectMai
+  elif compSelectNanami == 5:
+    print("Enemy is Nobara")
+    compSelectNobara
+    return
+
+
+#Placeholder character selection for Player#
+playerCharacterChoice=input("enter  1 for Yuji, enter 2 for Panda, enter 3 for Nanami, enter 4 for Mai, enter 5 for Nobara")
+playerCharacterChoice=int(playerCharacterChoice)
+if playerCharacterChoice == 1:
+  print("You chose Yuji Itadori")
+  playerSelectYuji
+  compCharacterChoice
+elif playerCharacterChoice == 2:
+  print("You chose Panda")
+  playerSelectPanda
+  compCharacterChoice
+elif playerCharacterChoice == 3:
+  print("You chose Nanami")
+  playerSelectNanami
+  compCharacterChoice
+elif playerCharacterChoice == 4:
+  print("You chose Mai Zenin")
+  playerSelectMai
+  compCharacterChoice
+elif playerCharacterChoice == 5:
+  print("You chose Nobara Kugisaki")
+  playerSelectNobara
+  compCharacterChoice
+else:
+  print("Please try again")
 
 def overTimeExec():
   playerCE=1400
