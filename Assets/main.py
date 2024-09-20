@@ -278,7 +278,7 @@ class characters():
     class megumiFushiguro():
       rank="2"
       difficulty="Easy"
-      Health=150
+      health=150
       attack=35
       defense=15
       speed=40
@@ -291,7 +291,7 @@ class characters():
     class nobaraKugisaki():
       rank="3"
       difficulty="Medium"
-      Health=150
+      health=150
       attack=20
       defense=20
       speed=35
